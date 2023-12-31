@@ -25,6 +25,11 @@ Requires-Dist: pytest>=7.4.3; extra == "dev"
 ```sh 
 % python3 -m streamlit run my_project/app.py user_data user_year user_month
 ```
-* user_data - csv файл с данными, например: GlobalLandTemperaturesByMajorCity.csv,
+* user_data - csv файл с данными;
 * user_year - год, начиная с 1950; 
 * user_month – номер месяца.
+
+Например:
+```sh 
+% python3 -m streamlit run my_project/app.py GlobalLandTemperaturesByMajorCity.csv 1970 3
+``` 
