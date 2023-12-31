@@ -1,0 +1,10 @@
+pandas>=2.1.4
+matplotlib>=3.8.2
+streamlit>=1.29.0
+
+[dev]
+mypy>=1.7.1
+ruff>=0.1.8
+black>=23.12.0
+isort>=5.3.12
+pytest>=7.4.3

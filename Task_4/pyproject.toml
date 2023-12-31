@@ -1,0 +1,54 @@
+[build-system]
+requires = [
+    "setuptools >= 61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_project"
+version = "0.0.1"
+
+authors = [
+    {name = "Artem Popov", email="st076324@student.spbu.ru"},
+]
+description = "Project for Task_4"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pandas >= 2.1.4",
+    "matplotlib >= 3.8.2",
+    "streamlit >= 1.29.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy >= 1.7.1",
+    "ruff >= 0.1.8",
+    "black >= 23.12.0",
+    "isort >= 5.3.12",
+    "pytest >= 7.4.3"
+]
+
+[tool.mypy]
+python_version = "3.10"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+follow_imports = "normal"
+ignore_missing_imports = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+warn_no_return = false
+warn_unused_ignores = true
+
+[tool.black]
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 88

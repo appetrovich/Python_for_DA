@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: my_project
+Version: 0.0.1
+Summary: Project for Task_4
+Author-email: Artem Popov <st076324@student.spbu.ru>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: streamlit>=1.29.0
+Provides-Extra: dev
+Requires-Dist: mypy>=1.7.1; extra == "dev"
+Requires-Dist: ruff>=0.1.8; extra == "dev"
+Requires-Dist: black>=23.12.0; extra == "dev"
+Requires-Dist: isort>=5.3.12; extra == "dev"
+Requires-Dist: pytest>=7.4.3; extra == "dev"
+
+## Task_4
+Проект позволяет определять среднюю температуру по широте за определенный год и месяц и выводить результаты с помощью streamlit.
+
+Для запуска программы введите команду:
+```sh 
+% python3 -m streamlit run my_project/app.py user_data user_year user_month
+```
+* user_data - csv файл с данными, например: GlobalLandTemperaturesByMajorCity.csv,
+* user_year - год, начиная с 1950; 
+* user_month – номер месяца.
